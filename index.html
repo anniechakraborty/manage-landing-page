@@ -7,6 +7,35 @@
     <title>Manage LP</title>
 </head>
 <body>
-    <h1 class="text-3xl">Hello</h1>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container to hold our logo, links and action button -->
+        <!-- About the tailwind classes used : 
+             1. items-center is the class to apply align-items : center 
+             2. justify-between is the class to apply justify-content : space-between
+             3. flex is the class to apply flex and by default the flex direction is row
+             4. to apply flex-direction :  column, use flex-col class along with flex
+        -->
+        <div class="flex items-center justify-between">
+            <!-- logo -->
+            <div class="pt-2">
+                <img src="img/logo.svg" alt="manage logo">
+            </div>
+            <!-- Menu items -->
+            <div class="hidden md:flex space-x-6">
+                <!-- Meaning of the above classes :
+                    1. on screens smaller than medium screen devices, the hidden class is applied (display : none) but on screen devices medium and up (> 768px), display: flex or flex class is applied.
+                    2. space-x-6 is a spacing / margin class which controls space between child elements by applying a margin-left: 1.5rem (or 24px).
+                -->
+                <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+                <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+            </div>
+            <!-- Action button -->
+            <a href="#" class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+        </div>
+    </nav>
 </body>
 </html>
